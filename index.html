@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="omoro-home">
+<head>
+  <title>Omoro Home</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+          <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=39.0848&lon=-77.1527&name=Rockville MD"> </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+          <script>
+            (function() {
+              var cx = '006532873380987714620:wnjiho6ufki';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+          <div class="row quicklinks">
+            <div class="col-xs-3 col-md-3">
+              <center><i class="icon-envelope"></i><h4>Gmail</h4></center>
+            </div>
+            <div class="col-xs-3 col-md-3">
+              <center><i class="icon-youtube-play"></i><h4>Youtube</h4></center>
+            </div>
+            <div class="col-xs-3 col-md-3">
+              <center><i class="icon-github-sign"></i><h4>Github</h4></center>
+            </div>
+            <div class="col-xs-3 col-md-3">
+              <center><i class="icon-file-text"></i><h4>Nitrous.IO</h4></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div>
+          <address>
+            <strong>Key Bindings <i class="icon-cog"></i></strong><br>
+            <strong>S</strong> - Search<br>
+            <strong>G</strong> - Gmail<br>
+            <strong>Y</strong> - Youtube<br>
+            <strong>T</strong> - Github<br>
+            <strong>N</strong> - Nitrous<br>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angularFire/0.2.0/angularfire.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase-simple-login.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
